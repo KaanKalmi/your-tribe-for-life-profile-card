@@ -10,22 +10,21 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: rgb(145, 158, 158);
+        background-color: rgb(31, 31, 31);
+        color: white;
     }
 
     .businessCard{
         position: relative;
         width: 675px;
         height: 375px;
-        background: url($lib/images/BG.jpg);
-        background-size: 150px;
+        background-image: url($lib/images/BG.png);
         border-radius: 8px;
-        padding: 20px;
+        padding: 24px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
         margin: auto;
+        box-shadow: 4px 8px 12px 8px rgba(0,0,0,0.35);
 
         & .leftAligned{
             position: absolute;
@@ -35,7 +34,6 @@
             width: 50%;
             
             & img{
-
                 margin: 2em;
                 height: 85%;
                 width: 75%;
@@ -48,22 +46,28 @@
 
         & h1{
             position: absolute;
-            top: 0;
+            top: 1.2em;
             margin: .25em;
         }
 
-        & p{
+        & h2{
             position: absolute;
-            top: 2em;
-            margin: .5em;
-            border-bottom: 1px solid black;
+            top: 3.25em;
+            margin: .25em;
+            font-size: 1.25em;
+        }
+
+        & p {
+            position: absolute;
+            top: 6.25em;
+            margin: .25em;
         }
 
         & .cardContent{
             position: absolute;
             bottom: 0;
 
-            & h2{
+            & h3{
                 text-align: center;
             }
 
@@ -95,9 +99,10 @@
         </div>
         <div class="rightAligned">
         <h1>Kaan Kalmioglu</h1>
-        <p>Frontend Developer</p>
+        <h2>Frontend Developer</h2>
+        <p> Squad 2D</p>
         <div class="cardContent">
-            <h2>Socials</h2>
+            <h3>Socials</h3>
             <ul>
                 <li> <a href="https://github.com/KaanKalmi"> <img src="{github}" alt="" height="50" width="50"> </a> </li>
                 <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{LinkedIn}" alt="" height="50" width="55"> </a> </li>
