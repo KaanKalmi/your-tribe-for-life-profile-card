@@ -5,6 +5,7 @@
 </script>
 
 <style>
+    @media (width > 750px) {
     .container{
         display: flex;
         justify-content: center;
@@ -90,6 +91,7 @@
         }
     }
     }
+}
 </style>
     
 <div class="container">
