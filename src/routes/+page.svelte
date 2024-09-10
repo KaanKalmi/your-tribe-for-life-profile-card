@@ -2,26 +2,26 @@
     import LinkedIn from '$lib/images/LinkedIn.png';
     import github from '$lib/images/github-white.png';
     import pfp from '$lib/images/pfp.jpg';
+    import figure from '$lib/images/figure.png';
 </script>
 
 <style>
-    @media (width > 750px) {
     .container{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         background-color: rgb(31, 31, 31);
-        color: white;
+        color: rgb(145, 213, 240);
     }
 
     .businessCard{
         position: relative;
-        width: 675px;
-        height: 375px;
-        background-image: url($lib/images/BG.png);
+        width: 700px;
+        height: 400px;
+        background-color: #252525;
         border-radius: 8px;
-        padding: 24px;
+        border: 2px solid #91d5f025;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -30,25 +30,30 @@
         & .leftAligned{
             position: absolute;
             left: 0;
-            top: 1em;
-            height: 90%;
-            width: 50%;
+            height: 100%;
+            width: 45%;
             
             & img{
-                margin: 2em;
-                height: 85%;
-                width: 75%;
-                border-radius: 6px;
+                height: 100%;
+                width: 100%;
+                border-radius: 8px 0 0 8px; 
+                border-right: 1px solid #42C9FF;
             }
         }
 
+        & .figure{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
         & .rightAligned{
-            margin-left: 6em;
+            margin-left: 10em;
 
         & h1{
             position: absolute;
             top: 1.2em;
             margin: .25em;
+            color: #42C9FF;
         }
 
         & h2{
@@ -56,12 +61,14 @@
             top: 3.25em;
             margin: .25em;
             font-size: 1.25em;
+            color: #91D5F0;
         }
 
         & p {
             position: absolute;
             top: 6.25em;
             margin: .25em;
+            color: #FFFFFF;
         }
 
         & .cardContent{
@@ -70,6 +77,7 @@
 
             & h3{
                 text-align: center;
+                color: #FFFFFF;
             }
 
             & ul{
@@ -91,7 +99,6 @@
         }
     }
     }
-}
 </style>
     
 <div class="container">
@@ -99,6 +106,7 @@
         <div class="leftAligned">
             <img src="{pfp}" alt="" height="375" width="250">
         </div>
+        <img src="{figure}" alt="" class="figure">
         <div class="rightAligned">
         <h1>Kaan Kalmioglu</h1>
         <h2>Frontend Developer</h2>
