@@ -1,6 +1,7 @@
 <script>
     import LinkedIn from '$lib/images/LinkedIn.png';
     import github from '$lib/images/github-white.png';
+    import pfp from '$lib/images/pfp.jpg';
 </script>
 
 <style>
@@ -25,6 +26,25 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+
+        & .leftAligned{
+            position: absolute;
+            left: 0;
+            top: 1em;
+            height: 90%;
+            width: 50%;
+            
+            & img{
+
+                margin: 2em;
+                height: 85%;
+                width: 75%;
+                border-radius: 6px;
+            }
+        }
+
+        & .rightAligned{
+            margin-left: 6em;
 
         & h1{
             position: absolute;
@@ -65,11 +85,15 @@
             }
         }
     }
-
+    }
 </style>
     
 <div class="container">
     <article class="businessCard">
+        <div class="leftAligned">
+            <img src="{pfp}" alt="" height="375" width="250">
+        </div>
+        <div class="rightAligned">
         <h1>Kaan Kalmioglu</h1>
         <p>Frontend Developer</p>
         <div class="cardContent">
@@ -79,5 +103,6 @@
                 <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{LinkedIn}" alt="" height="50" width="55"> </a> </li>
             </ul>
         </div>
+    </div>
     </article>
 </div>
