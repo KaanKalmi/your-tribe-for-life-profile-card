@@ -3,8 +3,11 @@
     import github from '$lib/images/github-white.png';
     import pfp from '$lib/images/pfp.jpg';
     import figure from '$lib/images/figure.png';
+
+    import {breakpoint, platform} from '../mediaquery.svelte';
 </script>
 
+{#if $breakpoint == "m"}
 <style>
     .container{
         display: flex;
@@ -100,7 +103,7 @@
     }
     }
 </style>
-    
+{/if}    
 <div class="container">
     <article class="businessCard">
         <div class="leftAligned">
