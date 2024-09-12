@@ -1,9 +1,5 @@
 <script>
-    import LinkedIn from '$lib/images/LinkedIn.png';
-    import github from '$lib/images/github-white.png';
-    import pfp from '$lib/images/pfp.jpg';
-    import figure from '$lib/images/figure.png';
-
+    import {linkedin, github, pfp, figure} from '$lib/index.js';
     import {breakpoint, platform} from '../mediaquery.svelte';
 </script>
 
@@ -315,7 +311,7 @@
                 <h3>Socials</h3>
                 <ul>
                     <li> <a href="https://github.com/KaanKalmi"> <img src="{github}" alt="" height="50" width="50"> </a> </li>
-                    <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{LinkedIn}" alt="" height="50" width="55"> </a> </li>
+                    <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{linkedin}" alt="" height="50" width="55"> </a> </li>
                 </ul>
             </div>
         </div>
