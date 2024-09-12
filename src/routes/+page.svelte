@@ -47,6 +47,7 @@
         & .figure{
             Display: none;
         }
+
         & .rightAligned{
             margin-left: 1em;
 
@@ -103,6 +104,7 @@
     }
 </style>
 {/if}  
+
 {#if $breakpoint == "s"}
 <style>
     .container{
@@ -143,6 +145,7 @@
         & .figure{
             Display: none;
         }
+        
         & .rightAligned{
             margin-left: 1em;
 
@@ -241,6 +244,7 @@
             bottom: 0;
             z-index: 1;
         }
+
         & .rightAligned{
             margin-left: 10em;
 
@@ -296,6 +300,7 @@
     }
 </style>
 {/if}    
+
 <div class="container">
     <article class="businessCard">
         <div class="leftAligned">
@@ -303,16 +308,16 @@
         </div>
         <img src="{figure}" alt="" class="figure">
         <div class="rightAligned">
-        <h1>Kaan Kalmioglu</h1>
-        <h2>Frontend Developer</h2>
-        <p> Squad 2D</p>
-        <div class="cardContent">
-            <h3>Socials</h3>
-            <ul>
-                <li> <a href="https://github.com/KaanKalmi"> <img src="{github}" alt="" height="50" width="50"> </a> </li>
-                <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{LinkedIn}" alt="" height="50" width="55"> </a> </li>
-            </ul>
+            <h1>Kaan Kalmioglu</h1>
+            <h2>Frontend Developer</h2>
+            <p> Squad 2D</p>
+            <div class="cardContent">
+                <h3>Socials</h3>
+                <ul>
+                    <li> <a href="https://github.com/KaanKalmi"> <img src="{github}" alt="" height="50" width="50"> </a> </li>
+                    <li> <a href="https://www.linkedin.com/in/kaan-kalmioglu-6a9bab26b/"> <img src="{LinkedIn}" alt="" height="50" width="55"> </a> </li>
+                </ul>
+            </div>
         </div>
-    </div>
     </article>
 </div>
